@@ -7,8 +7,10 @@
 //
 
 #import "ikvAppDelegate.h"
-
 #import "ikvMasterViewController.h"
+
+//add for CoreData
+//#import "ikvJobfairDataController.h"
 
 @implementation ikvAppDelegate
 
@@ -22,6 +24,13 @@
     UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
     ikvMasterViewController *controller = (ikvMasterViewController *)navigationController.topViewController;
     controller.managedObjectContext = self.managedObjectContext;
+    
+    // add for CoreData
+    /*
+    ikvJobfairDataController *_ikvJobfairDataController = [[ikvJobfairDataController alloc]init];
+    _ikvJobfairDataController.managedObjectContext = self.managedObjectContext;
+     */
+    
     return YES;
 }
 							

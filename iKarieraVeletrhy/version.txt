@@ -1,0 +1,4 @@
+1.0     2013-Aug-3th    release
+1.0.1   2013-Aug-4th    to prevent string overflow from UILabel, add adjustsFontSizeToFitWidth in DetailViewController.m
+1.0.2   2013-Aug-5th    Add Swipe control without Animation.
+1.0.3   2013-Aug-5th    Add Swipe control with Animation.

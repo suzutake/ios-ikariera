@@ -10,9 +10,10 @@
 
 #import <CoreData/CoreData.h>
 
-@interface ikvMasterViewController : UITableViewController <NSFetchedResultsControllerDelegate>
+@interface ikvMasterViewController : UITableViewController <NSXMLParserDelegate,NSFetchedResultsControllerDelegate>
 
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+
 
 @end
